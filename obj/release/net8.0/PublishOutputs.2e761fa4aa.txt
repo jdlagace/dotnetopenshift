@@ -1,0 +1,7 @@
+c:\temp\containers\dotnetopenshift\bin\release\net8.0\publish\dotnetopenshift.exe
+c:\temp\containers\dotnetopenshift\bin\release\net8.0\publish\appsettings.Development.json
+c:\temp\containers\dotnetopenshift\bin\release\net8.0\publish\appsettings.json
+c:\temp\containers\dotnetopenshift\bin\release\net8.0\publish\dotnetopenshift.dll
+c:\temp\containers\dotnetopenshift\bin\release\net8.0\publish\dotnetopenshift.deps.json
+c:\temp\containers\dotnetopenshift\bin\release\net8.0\publish\dotnetopenshift.runtimeconfig.json
+c:\temp\containers\dotnetopenshift\bin\release\net8.0\publish\dotnetopenshift.pdb
