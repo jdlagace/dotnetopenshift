@@ -1,4 +1,4 @@
-FROM microsoft/dotnet
+FROM registry.access.redhat.com/ubi8/dotnet-80:8.0
 
 # Set ASPNETCORE_URLS
 ENV ASPNETCORE_URLS=https://*:8080
