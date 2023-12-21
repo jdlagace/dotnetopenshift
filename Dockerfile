@@ -9,6 +9,9 @@ USER 0
 # Copy the niaries
 COPY /bin/release/net8.0/publish app
 
+# Change to app directory
+WORKDIR app
+
 # Run container by default as user with id 1001 (default)
 USER 1001
 
@@ -16,9 +19,6 @@ USER 1001
 # writable as OpenShift default security model is to run the container user
 # random UID
 RUN chown -R 1001:0 /app && chmod -R og+rwx /app
-
-# Change to app directory
-WORKDIR app
 
 # Expose port 8080 for the app
 EXPOSE 8080
