@@ -15,7 +15,7 @@ WORKDIR app
 # In order to drop the root user, we have to make some directories world
 # writable as OpenShift default security model is to run the container user
 # random UID
-#USER 1001
+USER 1001
 #RUN chown -R 1001:0 /app && chmod -R og+rwx /app
 
 # Expose port 8080 for the app
