@@ -1,7 +1,7 @@
 FROM registry.access.redhat.com/ubi8/dotnet-80:8.0
 
 # Set ASPNETCORE_URLS
-ENV ASPNETCORE_URLS="http://+:5000"
+ENV ASPNETCORE_URLS="http://+:8080"
 #;https://+:8080"
 
 # Switch to root for changing dir ownership/permissions
@@ -22,8 +22,8 @@ RUN chown -R 1001:0 /app && chmod -R og+rwx /app
 USER 1001
 
 # Expose port 80 for the app
-#EXPOSE 8080
-EXPOSE 5000
+EXPOSE 8080
+
 
 #RUN dotnet dev-certs https
 
