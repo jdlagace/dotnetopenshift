@@ -24,5 +24,7 @@ USER 1001
 EXPOSE 8080
 EXPOSE 5000
 
+RUN dotnet dev-certs https
+
 # Start the application using dotnet
 ENTRYPOINT dotnet dotnetopenshift.dll
