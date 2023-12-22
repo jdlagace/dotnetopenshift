@@ -1,7 +1,7 @@
 FROM registry.access.redhat.com/ubi8/dotnet-80:8.0
 
 # Set ASPNETCORE_URLS
-ENV ASPNETCORE_URLS=https://+:443;https://+:8080
+ENV ASPNETCORE_URLS=https://+:443;http://+:80
 
 # Switch to root for changing dir ownership/permissions
 USER 0
@@ -20,9 +20,9 @@ RUN chown -R 1001:0 /app && chmod -R og+rwx /app
 # random UID nonroot
 USER 1001
 
-# Expose port 8080 for the app
+# Expose port 80 for the app
 EXPOSE 443
-EXPOSE 8080
+EXPOSE 80
 
 # Start the application using dotnet
 ENTRYPOINT dotnet dotnetopenshift.dll
